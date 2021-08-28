@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+  background-color: #184071;
+  color: #f3b6c4;
+}
+
+.card {
+    color: #2f2f2f;
+    box-sizing: border-box;
+    background: #F0E2D8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin: auto;
+  }
