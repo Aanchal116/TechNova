@@ -1,16 +1,37 @@
 body {
   text-align: center;
-  background-color: #184071;
-  color: #f3b6c4;
+  background-color: #f5e8df;
+  color: #103e56;
 }
 
-.card {
-    color: #2f2f2f;
-    box-sizing: border-box;
-    background: #F0E2D8;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
-    width: 30%;
-    margin: auto;
-  }
+.header {
+    background-color: #E8D3C6;
+    color: #103e56;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tag {
+    flex-grow: 2;
+}
+.header-button {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    font-size: 50px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    font-size: 20px !important; 
+}
