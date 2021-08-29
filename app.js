@@ -84,11 +84,12 @@ app.get("/dashboard", function(req, res){
 app.post("/", function(req, res){
 
   console.log("Success");
+
+  app.get
+
+
   res.render("dashboard");
 
-  // https.get(url, "JSON", function(response){
-  //   console.log(response.statusCode);
-  // })
 })
 
 
