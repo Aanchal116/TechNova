@@ -2,12 +2,12 @@
 
 <div class="profile-container">
 <div class="panel">
-    <img class="logo" src="logo.png" alt="logo goes here" />
+    <img class="logo" src="/public/images/ProcrastiNot_fullLogo3x.png" alt="logo " />
 </div>
 
 <div class="profile-content">
     <div class="header">
-        <h2 class="tag">Taking the mental work out of scheduling</h2>
+        <h2 class="tag">A Students Bridge to Success</h2>
     
         <a href="" class="header-button" > &#43; </a>
         <a href="" class="header-button">&#x1f514;</a>
@@ -29,11 +29,23 @@
             <br>
             <br>
             <h2>Settings</h2>
-            
+            <label for="calendar"> Calendar:</label>
+            <select name="calendar">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="school">School</option>
+            </select>
+            <br>
+            <label for="wakeup">Wake up:</label>
+            <input type="time" name="wakeup">
+            <br>
+            <label for="bedtime">Bedtime:</label>
+            <input type="time" name="bedtime">
         </form>
     </div>
     <div class="discord">
-
+        <h4>Add ProcrastiNot to your Discord server and get Notifications + add events!</h4>
+        <button class="invite">Invite</button>
     </div>
 </div>
 </div>
