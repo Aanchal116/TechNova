@@ -3,12 +3,12 @@ body {
     background-color: #f5e8df;
     color: #103e56;
   }
-  
+
   h1 {
       font-family: Barlow;
       font-weight: 600;
   }
-  
+
   .header {
       background-color: #E8D3C6;
       color: #103e56;
@@ -16,7 +16,7 @@ body {
       flex-direction: row;
       justify-content: center;
   }
-  
+
   .tag {
       flex-grow: 2;
   }
@@ -28,14 +28,14 @@ body {
       text-decoration: none;
       text-align: center;
   }
-  
+
   .logo {
       height: 100px;
       width: 100px;
       margin: 20px;
       border-radius: 50%;
   }
-  
+
   .profile-pic {
       border-radius: 50%;
       font-size: 20px !important; 
@@ -43,8 +43,8 @@ body {
 
   .panel {
       background-color: #103e56;
-      
-      
+
+
 
   }
 
