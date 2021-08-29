@@ -1,11 +1,19 @@
 require('dotenv').config();
 const express = require("express");
+const bodyParser = require("body-parser");
+const ejs = require("ejs");
 const passport = require("passport");
 const mongoose = require("mongoose");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const findOrCreate = require('mongoose-findorcreate');
 
 const app = express();
+
+app.use(express.static("public"));
+app.set('view engine', 'ejs');
+app.use(bodyParser.urlencoded({
+  extended: true
+}))
 
 const userSchema = new mongoose.Schema( {
   email:String,
@@ -21,6 +29,9 @@ userSchema.plugin(findOrCreate);
 const url ="https://www.googleapis.com/auth/calendar";
 
 
+// Google Auth Section
+
+
 passport.use(new GoogleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
@@ -33,6 +44,13 @@ passport.use(new GoogleStrategy({
     });
   }
 ));
+
+// All get requests
+
+
+app.get("/", function(req, res){
+  res.render("login");
+})
 
 
 app.get('/auth/google',
@@ -47,6 +65,9 @@ passport.authenticate('google', { failureRedirect: '/login' }),
 });
 
 
+// All post requests
+
+
 
 app.post("/", function(req, res){
 
@@ -57,11 +78,9 @@ app.post("/", function(req, res){
 
 
 
-app.get("/", function(req, res){
-    console.log("Server started!")
+
+
+
+app.listen("3000", function(req, res){
+  console.log("Server started on port 3000");
 });
-
-
-
-
-app.listen("3000");
