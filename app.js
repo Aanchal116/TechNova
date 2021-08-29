@@ -58,7 +58,7 @@ app.post("/", function(req, res){
 
 
 app.get("/", function(req, res){
-    res.send("Hello World");
+    console.log("Server started!")
 });
 
 
