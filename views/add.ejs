@@ -1,0 +1,42 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<div class="add-header">
+<h3>New Deadline</h3>
+</div>
+
+<div class="add-form">
+    <label for="course">Course:</label>
+    <input type="text" name="course" placeholder="course" />
+    <br>
+    <label for="type">Type:</label>
+    <input type="text" name="type" placeholder="type" />
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" name="name" placeholder="name" />
+    <br>
+    <label for="start">Start:</label>
+    <input type="datetime-local" />
+    <br>
+    <label for="end">End:</label>
+    <input type="datetime-local" />
+    <br>
+    <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+    </div>
+    <div class="add-buttons">
+        <button type="button" class="btn discard">Discard</button>
+        <button type="button" class="btn add">Add</button>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

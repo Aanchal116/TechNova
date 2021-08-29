@@ -88,3 +88,33 @@ body {
       background-color: #ba6c45;
       color: white;
   }
+
+  .discard {
+      background-color: #103e56;
+      color: #E8D3C6;
+  }
+
+  .add {
+    background-color: #ba6c45;
+    color: #E8D3C6;
+}
+
+  .add-header {
+      background-color: #103e56;
+      color: #edb4bd;
+  }
+
+  .star-widget label{
+    font-size: 40px;
+    color: #103e56;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #ba6c45;
+}
+input:checked ~ label{
+  color: #ba6c45;
+}
