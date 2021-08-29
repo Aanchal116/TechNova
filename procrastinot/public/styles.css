@@ -4,6 +4,11 @@ body {
     color: #103e56;
   }
   
+  h1 {
+      font-family: Barlow;
+      font-weight: 600;
+  }
+  
   .header {
       background-color: #E8D3C6;
       color: #103e56;
@@ -34,4 +39,16 @@ body {
   .profile-pic {
       border-radius: 50%;
       font-size: 20px !important; 
+  }
+
+  .panel {
+      background-color: #103e56;
+      width: 35%;
+      float: left;
+
+  }
+
+  .profile-content {
+    width: 60%;
+    float: right;
   }
