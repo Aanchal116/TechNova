@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema( {
 
 userSchema.plugin(findOrCreate);
 
-const url ="https://www.googleapis.com/auth/calendar";
+// const url ="https://www.googleapis.com/auth/calendar";
 
 
 // Google Auth Section
@@ -71,9 +71,12 @@ passport.authenticate('google', { failureRedirect: '/login' }),
 
 app.post("/", function(req, res){
 
-  https.get(url, "JSON", function(response){
-    console.log(response.statusCode);
-  })
+  console.log("Success");
+  res.render("dashboard");
+
+  // https.get(url, "JSON", function(response){
+  //   console.log(response.statusCode);
+  // })
 })
 
 
