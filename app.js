@@ -64,6 +64,14 @@ passport.authenticate('google', { failureRedirect: '/login' }),
     res.redirect('/');
 });
 
+app.get("/add", function(req, res){
+  res.render("add");
+})
+
+app.get("/profile", function(req, res){
+  res.render("profile");
+})
+
 
 // All post requests
 
@@ -78,6 +86,8 @@ app.post("/", function(req, res){
   //   console.log(response.statusCode);
   // })
 })
+
+
 
 
 
