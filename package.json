@@ -1,0 +1,28 @@
+{
+  "name": "technova",
+  "version": "1.0.0",
+  "description": "TechNova Hackathon project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aanchal116/TechNova.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aanchal116/TechNova/issues"
+  },
+  "homepage": "https://github.com/Aanchal116/TechNova#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.2",
+    "mongoose-findorcreate": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0"
+  }
+}
