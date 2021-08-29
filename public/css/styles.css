@@ -104,17 +104,23 @@ body {
       color: #edb4bd;
   }
 
+  .add-form {
+      text-align: left;
+      margin-left: 20%;
+  }
   .star-widget label{
     font-size: 40px;
-    color: #103e56;
+    color: #ba6c45;
     padding: 10px;
-    float: right;
     transition: all 0.2s ease;
   }
-input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label{
-  color: #ba6c45;
+  .star-widget input{
+    display: none;
+  }
+  .star-widget input:not(:checked) ~ label:hover,
+  .star-widget input:not(:checked) ~ label:hover ~ label{
+  color: #103e56;
 }
-input:checked ~ label{
-  color: #ba6c45;
+.star-widget input:checked ~ label{
+  color: #103e56;
 }
